@@ -1,13 +1,10 @@
+
 function max(numbers) {
   //set newMax to the first item in numbers array
   //compare each item to newMax
   //if item is greater than newMax, set newMax to that number
   let newMax = numbers[0];
-  /*for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > newMax) {
-      newMax = numbers[i];
-    }
-  }*/
+  
   let i = 0;
   while(i < numbers.length){
     if(numbers[i] > newMax){
@@ -24,11 +21,20 @@ function min(numbers) {
   //compare each item to newMin
   //if item is less than newMin, set newMin to that number
   let newMin = numbers[0];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < newMin) {
+  let i = 0;
+
+  while(i < numbers.length){
+    if(numbers[i] < newMin){
       newMin = numbers[i];
     }
+    i++
   }
+
+  //for (let i = 0; i < numbers.length; i++) {
+  //  if (numbers[i] < newMin) {
+  //    newMin = numbers[i];
+  //  }
+  //}
   return newMin;
 }
 
